@@ -14,7 +14,7 @@ class DelayedJobWeb < Sinatra::Base
   # Enable sessions so we can use CSRF protection
   enable :sessions
 
-  set :protection, :except => [:json_csrf]
+  set :protection, :except => [:json_csrf],
     # Various session protections
     :session => true,
     # Various non-default Rack::Protection options
